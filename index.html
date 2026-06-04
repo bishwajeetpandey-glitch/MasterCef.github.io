@@ -41,7 +41,7 @@
             const prompt = `Create a Recipe on ${topic}.`;
 
             // Fetch the API key securely from the server
-            const response = await fetch('api/request_handler.php');
+            const response = await fetch('request_handler.php');
             const data = await response.json();
             const API_KEY = data.apiKey;
 
